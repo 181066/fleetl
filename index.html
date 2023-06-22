@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>FleetL</title>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Helvetica-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Helvetica-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header visible">
+  <div class="container header__container">
+    <div class="header__inner">
+      <a href="#" class="header__logo" data-menu-item>
+        <img width="148" height="59" src="./img/header-logo.svg" alt="">
+      </a>
+      <nav class="nav header__hav">
+        <ul class="nav__list list-reset">
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Monitoring</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Devices</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header__btn orange-btn">
+        LOGIN
+      </a>
+      <div class="header__right">
+        <a href="#" class="header__phone">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+        <div class="header__burger">
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu header__menu" data-menu>
+    <nav class="nav header__hav">
+      <ul class="nav__list list-reset">
+        <li><a data-menu-item href="#">Partners</a></li>
+        <li><a data-menu-item href="#">Monitoring</a></li>
+        <li><a data-menu-item href="#">Solutions</a></li>
+        <li><a data-menu-item href="#">Pricing</a></li>
+        <li><a data-menu-item href="#">Devices</a></li>
+        <li><a data-menu-item href="#">About us</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="header__btn orange-btn" data-menu-item>
+      Contact us
+    </a>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__inner">
+      <div class="hero__head">
+        <h1>Track smarter, drive <br>
+          better your business <br>
+          online with us
+        </h1>
+        <p>
+          Control your transport and reduce fleet maintenance costs by up to 30% by introducing a monitoring system with a lifetime hardware warranty.
+        </p>
+      </div>
+      <a href="#" class="hero__btn">
+        Connect us
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="service">
+  <div class="container service__container">
+    <h2 class="section-title">
+      Vehicle Services <br>
+      Free for up to 5 vehicles
+    </h2>
+    <div class="service__inner tab">
+      <div class="tab__btns">
+        <button class="btn-reset tab__btn tab__btn-1 active" data-tab="1">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab1"></use>
+          </svg>
+          <span>Get FleetL</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-2" data-tab="2">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab2"></use>
+          </svg>
+          <span>Notifications</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-3" data-tab="3">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab3"></use>
+          </svg>
+          <span>Integration</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-4" data-tab="4">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab4"></use>
+          </svg>
+          <span>Logistics</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-5" data-tab="5">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab5"></use>
+          </svg>
+          <span>Dashboard</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-6" data-tab="6">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab6"></use>
+          </svg>
+          <span>Reports</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-7" data-tab="7">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab7"></use>
+          </svg>
+          <span>Videotracking <br>
+            for Rent/TaxiL</span>
+        </button>
+        <button class="btn-reset tab__btn tab__btn-8" data-tab="8">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tab8"></use>
+          </svg>
+          <span>Construction machinery</span>
+        </button>
+      </div>
+      <div class="tab__body">
+        <div class="tab__content tab__content-1 active">
+          <div class="tab-1">
+            <h3>Get FleetL if you</h3>
+            <form action="#" class="tab__form">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">need to track your own fleet</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">want to resell tracking system and provide other services to businesses</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">have tracking system in place and you would like to consider other services</span>
+              </label>
+              <div class="tab__form-inner">
+                <div class="tab__form-group">
+                  <input class="input-reset" type="text" placeholder="First name">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="tab__form-group">
+                  <input class="input-reset" type="text" placeholder="Last name">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="tab__form-group">
+                  <input class="input-reset" type="tel" placeholder="Phone">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#tel"></use>
+                  </svg>
+                </div>
+                <div class="tab__form-group">
+                  <input class="input-reset" type="email" placeholder="E-mail">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
+                </div>
+                <div class="tab__form-group">
+                  <textarea class="input-reset" placeholder="Your comment"></textarea>
+                </div>
+              </div>
+              <button class="btn-reset tab__form-btn orange-btn">
+                Send request
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="tab__content tab__content-2 tab-bg">
+          <div class="second">
+            <div class="second__inner">
+              <h3>Improve Driver Efficiency</h3>
+              <p class="text-left">
+                Vehicle tracking can also be used to improve driver efficiency by identifying areas of poor performance. 
+                For example, is a driver consistently arriving late, do they have numerous failed deliveries, or are they simply delivering less than their colleagues?
+                By monitoring this information, fleet managers can ensure their drivers become more efficient and improve their overall performance.
+              </p>
+              <div class="second__img">
+                <img width="592" height="323" src="./img/secon-tab-img.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-3 tab-bg">
+          <div class="third">
+            <h3>Automated system</h3>
+            <div class="third__inner">
+              <div class="third__info">
+                <p>
+                  We offer API integrations to make your work process much easier and more streamlined.
+                </p>
+                <p>
+                  Unsure of which type of integration to use? Our direct integration is perfect for integrating communication apps.
+                  So, if you want happier customers and fewer inquiries for your customer service team, inline your apps with <b>FleetL</b>.
+                </p>
+                <p>
+                  Our software allows easy integration with diffrent platforms. The result is an automated seamless technology in your business.
+                </p>
+              </div>
+              <div class="third__img">
+                <img width="420" height="462" src="./img/third-tab-img.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-4 tab-bg">
+          <div class="fourth">
+            <div class="fourth__inner">
+              <div class="fourth__info">
+                <h3 class="text-center">Logistics <br />Planning and Control</h3>
+                <p>Easy and fast planning of routes for the delivery of goods. Efficient route control.</p>
+              </div>
+              <div class="fourth__img">
+                <img width="629" height="436" src="./img/fourth-tab-img.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-5">
+          <img class="tab-5__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
+          <div class="fifth">
+            <div class="fifth__img fifth__img-big">
+              <img width="892" height="628" src="../img/fourth-img-big.webp" alt="">
+            </div>
+            <div class="fifth__img fifth__img-small">
+              <img width="469" height="402" src="../img/fourth-img-small.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-6 tab-bg">
+          <div class="reports">
+            <div class="swiper reports__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reports__inner">
+                    <div class="reports__info">
+                      <h3>Detailed report</h3>
+                      <p>
+                        Detailed report - is the mostly used report of this software. It shows the daily work characteristics of a specific vehicle.
+                      </p>
+                      <!-- <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quidem?
+                      </p> -->
+                    </div>
+                    <div class="reports__img">
+                      <img width="762" height="502" src="./img/reports-img1.webp" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__inner">
+                    <div class="reports__info">
+                      <h3>Drill for more detailes </h3>
+                      <p>
+                        You can find all the details for a specific vehicle work on that page.
+                      </p>
+                      <!-- <p>
+                        Detailed report- is ghhjbbvhbjbcj ghbds hburhe kjjkbn. hhjfbk hbfbknfnv dhhjbbj
+                      </p> -->
+                    </div>
+                    <div class="reports__img">
+                      <img width="762" height="502" src="./img/reports-img2.webp" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__inner">
+                    <div class="reports__info">
+                      <h3>Fuel report</h3>
+                      <p>
+                        Get to this report when you need to optimize your vehicle fuel consumption.
+                        It shows the fuel consumption rate as well as liters filled in a vehicle tank or drained out of it.
+                      </p>
+                      <!-- <p>
+                        Detailed report- is ghhjbbvhbjbcj ghbds hburhe kjjkbn. hhjfbk hbfbknfnv dhhjbbj
+                      </p> -->
+                    </div>
+                    <div class="reports__img">
+                      <img width="762" height="502" src="./img/reports-img3.webp" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reports__swiper-btns">
+                <div class="slide-prev">
+                  <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 18L3 10L11 2" stroke-width="3"/>
+                  </svg>
+                </div>
+                <div class="slide-next">
+                  <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 18L10 10L2 2" stroke-width="3"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-7">
+          <img class="tab-7__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
+          <div class="fifth">
+            <div class="fifth__img fifth__img-big">
+              <img width="892" height="608" src="../img/track-img-big.webp" alt="">
+            </div>
+            <div class="fifth__img fifth__img-small">
+              <img width="469" height="402" src="../img/track-img-small.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab__content tab__content-8">
+          <div class="machine__info">
+            <h3>
+              Construction
+              machinery
+            </h3>
+            <ul class="list-reset machine__list">
+              <li>
+                <div class="machine__list-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#machine-icon1"></use>
+                  </svg>
+                </div>
+                <p>Concrete mixer rotation control</p>
+              </li>
+              <li>
+                <div class="machine__list-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#machine-icon2"></use>
+                  </svg>
+                </div>
+                <p>Excavator bucket control</p>
+              </li>
+              <li>
+                <div class="machine__list-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#machine-icon3"></use>
+                  </svg>
+                </div>
+                <p>Loading / Unloading control</p>
+              </li>
+              <li>
+                <div class="machine__list-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#machine-icon4"></use>
+                  </svg>
+                </div>
+                <p>Cold room temperature control</p>
+              </li>
+              <li>
+                <div class="machine__list-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#machine-icon5"></use>
+                  </svg>
+                </div>
+                <p>Fuel filling and draining control</p>
+              </li>
+            </ul>
+          </div>
+          <img class="tab-8__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
+          <div class="fifth">
+            <div class="fifth__img fifth__img-big">
+              <img width="892" height="608" src="../img/machine-img-big.webp" alt="">
+            </div>
+            <div class="fifth__img fifth__img-small">
+              <img width="469" height="402" src="../img/machine-img-small.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="why">
+  <div class="container why__container">
+    <h2 class="section-title">
+      Why clients choose us?
+    </h2>
+    <div class="why__inner">
+      <div class="why__item">
+        <div class="why__item-icon">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#why-icon1"></use>
+          </svg>
+        </div>
+        <h3>Easy Switch</h3>
+        <p>
+          We offer free switching to our software on your current trackers
+        </p>
+      </div>
+      <div class="why__item">
+        <div class="why__item-icon">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#why-icon2"></use>
+          </svg>
+        </div>
+        <h3>Support Team</h3>
+        <p>
+          You will be assigned a personal manager that will be able to assist you with any questions you might have
+        </p>
+      </div>
+      <div class="why__item">
+        <div class="why__item-icon">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#why-icon3"></use>
+          </svg>
+        </div>
+        <h3>Mobile tracking</h3>
+        <p>
+          Track always your fleet with mobile applications
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="free">
+  <div class="container free__container">
+    <div class="free__inner">
+      <div class="free__info">
+        <h2>
+          Join our free trial period for 14 days
+        </h2>
+        <p>
+          Our tracking and logistics system will reduce fleet maintenance costs and increase business’ productivity.
+          We offer free switching to our software on your current trackers
+        </p>
+        <a href="#" class="free__btn orange-btn">
+          Try to free now
+        </a>
+      </div>
+      <div class="free__img">
+        <img width="1171" height="648" src="../img/free-img.webp" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="map" class="map">
+  <div class="map__content contact">
+    <div class="contact__head">
+      <h2 class="section-title">
+        Leave a request and we WILL call you back
+      </h2>
+      <p>
+        Follow us ON social media
+      </p>
+    </div>
+    <div class="contact__inner">
+      <div class="contact__left">
+        <div class="contact__left-row">
+          <h3>Support</h3>
+          <a href="#">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tel"></use>
+            </svg>
+            <span>+</span>7 (800) 333-68-83
+          </a>
+          <a href="#">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            ru.support@kgk-global.com
+          </a>
+        </div>
+        <div class="contact__left-row">
+          <h3>Connect to the service:</h3>
+          <a href="#">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tel"></use>
+            </svg>
+            <span>+</span>7 (495) 668-09-98
+          </a>
+          <a href="#">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            ru.sales@kgk-global.com
+          </a>
+        </div>
+        <div class="contact__left-row">
+          <h3>Address</h3>
+          <p>
+            <img width="24" height="24" src="./img/pin.svg" alt="">
+            <span>
+              Highgate Hill, London, UK
+            </span>
+          </p>
+        </div>
+        <div class="contact__left-row">
+          <h3>Follow us in social media:</h3>
+          <div class="contact__socials">
+            <a href="#">
+              <img width="50" height="50" src="./img//facebook.svg" alt="">
+            </a>
+            <a href="#">
+              <img width="50" height="50" src="./img//vk.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact__right">
+        <div class="contact__form">
+          <div class="contact__form-inner">
+            <div class="contact__form-group">
+              <input class="input-reset" type="text" placeholder="Your name">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+            </div>
+            <div class="contact__form-group">
+              <input class="input-reset" type="email" placeholder="E-mail">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <div class="contact__form-group">
+              <input class="input-reset" type="tel" placeholder="Phone">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#tel"></use>
+              </svg>
+            </div>
+            <div class="contact__form-group">
+              <input class="input-reset" type="text" placeholder="Organization">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#org"></use>
+              </svg>
+            </div>
+            <div class="contact__form-group">
+              <textarea class="input-reset" placeholder="Your comment"></textarea>
+            </div>
+          </div>
+          <div class="contact__form-bottom">
+            <label class="custom-checkbox">
+              <input checked type="checkbox" class="custom-checkbox__field">
+              <span class="custom-checkbox__content">I have read the <a href="#">Privacy Policy</a> and give my <br> consent to the processing of personal data*</span>
+            </label>
+            <button class="btn-reset contact__form-btn orange-btn">
+              Send request
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__top-inner">
+        <div class="footer__left">
+          <div class="footer__col footer__col-1">
+            <h3>Menu</h3>
+            <ul class="list-reset">
+              <li><a href="#">Monitoring</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-2">
+            <h3>Solutions</h3>
+            <ul class="list-reset">
+              <li><a href="#">Cargo transportation</a></li>
+              <li><a href="#">Taxi</a></li>
+              <li><a href="#">Corporate parks</a></li>
+              <li><a href="#">Passenger transportation</a></li>
+              <li><a href="#">Special equipment</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-3">
+            <h3>Equipment</h3>
+            <ul class="list-reset">
+              <li><a href="#">GPS/GLONASS trackers</a></li>
+              <li><a href="#">Monitoring system</a></li>
+              <li><a href="#">Autonomous air heater</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <h3>Contacts</h3>
+          <ul class="list-reset">
+            <li>
+              <a href="#" class="footer__phone">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <span>+</span>7 (800) 333-68-83
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                ru.support@kgk-global.com
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__phone">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <span>+</span>7 (495) 668-09-98
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                ru.sales@kgk-global.com
+              </a>
+            </li>
+            <li>
+              <img width="18" height="22" src="./img/pin.svg" alt="">
+              <p>
+                Highgate Hill, London, UK
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p>© FleetL 2023</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Website rules</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
