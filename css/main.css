@@ -498,7 +498,7 @@ a {
   margin-bottom: 40px;
 }
 .hero__head h1 {
-  font-weight: 700;
+  font-weight: 400; /* 700 */
   font-size: 59px;
   line-height: 125%;
   color: #302B29;
@@ -922,11 +922,12 @@ a {
   z-index: 2;
 }
 .second h3 {
-  font-weight: 700;
+  font-weight: 400!important;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  color: var(--black);
+  /* color: var(--black); */
+  color: #302B29;
   margin-bottom: 20px;
 }
 .second p {
@@ -941,16 +942,20 @@ a {
   max-width: 592px;
   margin: 0 auto;
 }
-
+.second__inner-bold{
+  color: var(--black);
+  font-weight: 700;
+}
 .third {
   padding: 50px 0 50px 50px;
 }
 .third h3 {
-  font-weight: 700;
+  font-weight: 400!important;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: var(--black);
+  /* color: var(--black); */
+  color: #302B29;
   margin-bottom: 15px;
 }
 .third__inner {
@@ -963,6 +968,10 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.third__inner-bold{
+  color: var(--black);
+  font-weight: 700;
 }
 .third__info {
   width: 43%;
@@ -1008,6 +1017,10 @@ a {
   position: relative;
   height: 100%;
 }
+.fourth__inner-bold{
+  color: var(--black);
+  font-weight: 700;
+}
 .fourth__img {
   width: 70%;
   max-width: 629px;
@@ -1019,11 +1032,12 @@ a {
   max-width: 270px;
 }
 .fourth__info h3 {
-  font-weight: 700;
+  font-weight: 400!important;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 20px;
-  color: var(--black);
+  /* color: var(--black); */
+  color: #302B29;
 }
 .fourth__info p {
   font-weight: 400;
