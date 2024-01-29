@@ -1,685 +1,2950 @@
-<!DOCTYPE html>
-<html lang="ru" class="page">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>FleetL</title>
-  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Helvetica-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Helvetica-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-  <script defer src="js/main.js"></script>
-</head>
-
-<body class="page__body">
-  <div class="site-container">
-    <header class="header visible">
-      <div class="container header__container">
-        <div class="header__inner">
-          <a href="#" class="header__logo" data-menu-item>
-            <img width="148" height="59" src="./img/header-logo.svg" alt="">
-          </a>
-          <nav class="nav header__hav">
-            <ul class="nav__list list-reset">
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Monitoring</a></li>
-              <li><a href="#">Solutions</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Devices</a></li>
-              <li><a href="#">About us</a></li>
-            </ul>
-          </nav>
-          <a href="#" class="header__btn orange-btn">
-            LOGIN
-          </a>
-          <div class="header__right">
-            <a href="#" class="header__phone">
-              <svg class="">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FleetL</title>
+    <script type="module" crossorigin src="/assets/main-1P5h2GAp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Mg4x5xIj.css">
+  </head>
+  <body>
+    <div class="wrapper h-full w-full min-w-[320px] overflow-hidden">
+      <header
+        id="header"
+        class="absolute left-0 top-[60px] w-full px-[60px] tbl:top-5 tbl:px-5"
+      >
+        <div
+          class="relative w-full rounded-[50px] bg-white py-[8px] pl-[30px] pr-[10px] tbl:rounded-[30px] small:pl-[10px]"
+        >
+          <div class="flex items-center justify-between">
+            <a
+              href="/"
+              class="relative z-[2] block h-[50px] tbl:h-auto tbl:max-w-[100px] small:max-w-[70px]"
+            >
+              <img
+                class="block h-full w-full"
+                width="125"
+                height="50"
+                src="./img/header-logo.svg"
+                alt="Logo"
+              />
             </a>
-            <div class="header__burger">
-              <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-                <span class="burger__line"></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="menu header__menu" data-menu>
-        <nav class="nav header__hav">
-          <ul class="nav__list list-reset">
-            <li><a data-menu-item href="#">Partners</a></li>
-            <li><a data-menu-item href="#">Monitoring</a></li>
-            <li><a data-menu-item href="#">Solutions</a></li>
-            <li><a data-menu-item href="#">Pricing</a></li>
-            <li><a data-menu-item href="#">Devices</a></li>
-            <li><a data-menu-item href="#">About us</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="header__btn orange-btn" data-menu-item>
-          Contact us
-        </a>
-      </div>
-    </header>
-
-    <main class="main">
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__inner">
-            <div class="hero__head">
-              <h1>&ldquo;Track smarter <br>
-                and drive your <br>
-                business with us&rdquo;
-              </h1>
-              <p>
-                Control your transport and reduce fleet maintenance costs by up to 30% by introducing a monitoring system with a lifetime hardware warranty.
-              </p>
-            </div>
-            <a href="#" class="hero__btn">
-              Contact us
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="service">
-        <div class="container service__container">
-          <h2 class="section-title">
-            Vehicle Services <br>
-            Free for up to 5 vehicles
-          </h2>
-          <div class="service__inner tab">
-            <div class="tab__btns">
-              <button class="btn-reset tab__btn tab__btn-1 active" data-tab="1">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab1"></use>
+            <nav
+              class="header-nav lg:invisible lg:absolute lg:left-0 lg:top-0 lg:w-full lg:rounded-[50px] lg:bg-white lg:px-[30px] lg:pb-[50px] lg:pt-[74px] lg:opacity-0 medium:rounded-[30px]"
+            >
+              <ul
+                class="flex items-center gap-[60px] xl:gap-5 lg:justify-center lg:border-t lg:pt-[30px] tbl:flex-col"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="font-mont leading-normal transition-colors hover:text-mainblue"
+                    >Homepage</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="font-mont leading-normal transition-colors hover:text-mainblue"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./service.html"
+                    class="font-mont leading-normal transition-colors hover:text-mainblue"
+                    >Our Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="font-mont leading-normal transition-colors hover:text-mainblue"
+                    >Contact</a
+                  >
+                </li>
+                <li class="hidden lg:flex">
+                  <a
+                    href="#"
+                    class="orange-btn medium:flex medium:items-center medium:py-[10px]"
+                    >Leave request</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="relative z-[2] flex gap-[10px]">
+              <a
+                aria-label="Login"
+                href="#"
+                class="group flex items-center gap-[5px] rounded-[40px] border-2 border-mainblue px-5 py-[15px] font-bold text-mainblue transition-all hover:bg-mainblue xl:p-[15px] medium:p-[10px] small:p-[6px]"
+              >
+                <svg
+                  class="fill-[#1596EC] transition-all group-hover:fill-white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 11V8L15 12L10 16V13H1V11H10ZM2.4578 15H4.58152C5.76829 17.9318 8.64262 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9H2.4578C3.73207 4.94289 7.52236 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C7.52236 22 3.73207 19.0571 2.4578 15Z"
+                  />
                 </svg>
-                <span>Get FleetL</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-2" data-tab="2">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab2"></use>
-                </svg>
-                <span>Notifications</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-3" data-tab="3">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab3"></use>
-                </svg>
-                <span>Integration</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-4" data-tab="4">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab4"></use>
-                </svg>
-                <span>Logistics</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-5" data-tab="5">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab5"></use>
-                </svg>
-                <span>Dashboard</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-6" data-tab="6">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab6"></use>
-                </svg>
-                <span>Reports</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-7" data-tab="7">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab7"></use>
-                </svg>
-                <span>Videotracking <br>
-                  for Rent/TaxiL</span>
-              </button>
-              <button class="btn-reset tab__btn tab__btn-8" data-tab="8">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#tab8"></use>
-                </svg>
-                <span>Construction machinery</span>
-              </button>
-            </div>
-            <div class="tab__body">
-              <div class="tab__content tab__content-1 active">
-                <div class="tab-1">
-                  <h3>Get FleetL if you</h3>
-                  <form action="#" class="tab__form">
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="custom-checkbox__field">
-                      <span class="custom-checkbox__content">need to track your own fleet</span>
-                    </label>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="custom-checkbox__field">
-                      <span class="custom-checkbox__content">want to resell tracking system and provide other services to businesses</span>
-                    </label>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="custom-checkbox__field">
-                      <span class="custom-checkbox__content">have tracking system in place and you would like to consider other services</span>
-                    </label>
-                    <div class="tab__form-inner">
-                      <div class="tab__form-group">
-                        <input class="input-reset" type="text" placeholder="First name">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#user"></use>
-                        </svg>
-                      </div>
-                      <div class="tab__form-group">
-                        <input class="input-reset" type="text" placeholder="Last name">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#user"></use>
-                        </svg>
-                      </div>
-                      <div class="tab__form-group">
-                        <input class="input-reset" type="tel" placeholder="Phone">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#tel"></use>
-                        </svg>
-                      </div>
-                      <div class="tab__form-group">
-                        <input class="input-reset" type="email" placeholder="E-mail">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#mail"></use>
-                        </svg>
-                      </div>
-                      <div class="tab__form-group">
-                        <textarea class="input-reset" placeholder="Your comment"></textarea>
-                      </div>
-                    </div>
-                    <button class="btn-reset tab__form-btn orange-btn">
-                      Send request
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div class="tab__content tab__content-2 tab-bg">
-                <div class="second">
-                  <div class="second__inner">
-                    <h3>
-                      <span class="second__inner-bold">Notifications</span>
-                      Improve Driver Efficiency
-                    </h3>
-                    <p class="text-left">
-                      Vehicle tracking can also be used to improve driver efficiency by identifying areas of poor performance. 
-                      For example, if a driver consistently arrives late, has numerous failed deliveries, or delivers less than expected, 
-                      fleet managers can monitor this information to ensure drivers become more efficient and enhance their overall performance.
-                    </p>
-                    <div class="second__img">
-                      <img width="592" height="323" src="./img/secon-tab-img.webp" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-3 tab-bg">
-                <div class="third">
-                  <h3>
-                    <span class="third__inner-bold">Integration</span>
-                    Automated System
-                  </h3>
-                  <div class="third__inner">
-                    <div class="third__info">
-                      <p>
-                        We offer API integrations to make your work process much easier and more streamlined.
-                      </p>
-                      <p>
-                        Not sure which type of integration to use? Our direct integration is perfect for introducing communication apps seamlessly.
-                        So, if you want to have happier customers and receive fewer inquiries for your customer service team, embed your apps with <b>FleetL</b>.
-                      </p>
-                      <p>
-                        Our software allows for easy integration with different platforms, resulting in automated and seamless technology for your business.
-                      </p>
-                    </div>
-                    <div class="third__img">
-                      <img width="420" height="462" src="./img/third-tab-img.webp" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-4 tab-bg">
-                <div class="fourth">
-                  <div class="fourth__inner">
-                    <div class="fourth__info">
-                      <h3 class="text-center">
-                        <span class="fourth__inner-bold">Logistics</span><br />
-                        Planning and Control
-                      </h3>
-                      <p>Experience the ease and efficiency of planning delivery routes for your goods and services.
-                        Our system enables quick route planning and offers effective control over them.</p>
-                    </div>
-                    <div class="fourth__img">
-                      <img width="629" height="436" src="./img/fourth-tab-img.webp" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-5">
-                <img class="tab-5__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
-                <div class="fifth">
-                  <div class="fifth__img fifth__img-big">
-                    <img width="892" height="628" src="../img/fourth-img-big.webp" alt="">
-                  </div>
-                  <div class="fifth__img fifth__img-small">
-                    <img width="469" height="402" src="../img/fourth-img-small.webp" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-6 tab-bg">
-                <div class="reports">
-                  <div class="swiper reports__swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="reports__inner">
-                          <div class="reports__info">
-                            <h3>Detailed Report</h3>
-                            <p>
-                              One of the most commonly used reports in our software. It provides comprehensive information on the daily work characteristics of a specific vehicle.
-                            </p>
-                            <!-- <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quidem?
-                            </p> -->
-                          </div>
-                          <div class="reports__img">
-                            <img width="762" height="502" src="./img/reports-img1.webp" alt="">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="reports__inner">
-                          <div class="reports__info">
-                            <h3>Drill down for more details</h3>
-                            <p>
-                              On that page, you can access all the specific details regarding a vehicle's work.
-                            </p>
-                            <!-- <p>
-                              Detailed report- is ghhjbbvhbjbcj ghbds hburhe kjjkbn. hhjfbk hbfbknfnv dhhjbbj
-                            </p> -->
-                          </div>
-                          <div class="reports__img">
-                            <img width="762" height="502" src="./img/reports-img2.webp" alt="">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="reports__inner">
-                          <div class="reports__info">
-                            <h3>Fuel Report</h3>
-                            <p>
-                              Access this report to optimize your vehicle's fuel consumption.
-                              It displays the fuel consumption rate and provides information on the amount of fuel filled in or drained from the vehicle's tank.
-                            </p>
-                            <!-- <p>
-                              Detailed report- is ghhjbbvhbjbcj ghbds hburhe kjjkbn. hhjfbk hbfbknfnv dhhjbbj
-                            </p> -->
-                          </div>
-                          <div class="reports__img">
-                            <img width="762" height="502" src="./img/reports-img3.webp" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reports__swiper-btns">
-                      <div class="slide-prev">
-                        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11 18L3 10L11 2" stroke-width="3"/>
-                        </svg>
-                      </div>
-                      <div class="slide-next">
-                        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2 18L10 10L2 2" stroke-width="3"/>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-7">
-                <img class="tab-7__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
-                <div class="fifth">
-                  <div class="fifth__img fifth__img-big">
-                    <img width="892" height="608" src="../img/track-img-big.webp" alt="">
-                  </div>
-                  <div class="fifth__img fifth__img-small">
-                    <img width="469" height="402" src="../img/track-img-small.webp" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="tab__content tab__content-8">
-                <div class="machine__info">
-                  <h3>
-                    Construction
-                    machinery
-                  </h3>
-                  <ul class="list-reset machine__list">
-                    <li>
-                      <div class="machine__list-icon">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#machine-icon1"></use>
-                        </svg>
-                      </div>
-                      <p>Concrete mixer rotation control</p>
-                    </li>
-                    <li>
-                      <div class="machine__list-icon">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#machine-icon2"></use>
-                        </svg>
-                      </div>
-                      <p>Excavator bucket control</p>
-                    </li>
-                    <li>
-                      <div class="machine__list-icon">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#machine-icon3"></use>
-                        </svg>
-                      </div>
-                      <p>Loading / Unloading control</p>
-                    </li>
-                    <li>
-                      <div class="machine__list-icon">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#machine-icon4"></use>
-                        </svg>
-                      </div>
-                      <p>Cold room temperature control</p>
-                    </li>
-                    <li>
-                      <div class="machine__list-icon">
-                        <svg class="">
-                          <use xlink:href="img/sprite.svg#machine-icon5"></use>
-                        </svg>
-                      </div>
-                      <p>Fuel filling and draining control</p>
-                    </li>
-                  </ul>
-                </div>
-                <img class="tab-8__scroll-touch" width="70" height="70" src="./img/scroll-touch.webp" alt="">
-                <div class="fifth">
-                  <div class="fifth__img fifth__img-big">
-                    <img width="892" height="608" src="../img/machine-img-big.webp" alt="">
-                  </div>
-                  <div class="fifth__img fifth__img-small">
-                    <img width="469" height="402" src="../img/machine-img-small.webp" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="why">
-        <div class="container why__container">
-          <h2 class="section-title">
-            Why clients choose us?
-          </h2>
-          <div class="why__inner">
-            <div class="why__item">
-              <div class="why__item-icon">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#why-icon1"></use>
-                </svg>
-              </div>
-              <h3>Easy Switch</h3>
-              <p>
-                We offer a free switch to our software using your current tracker.
-              </p>
-            </div>
-            <div class="why__item">
-              <div class="why__item-icon">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#why-icon2"></use>
-                </svg>
-              </div>
-              <h3>Support Team</h3>
-              <p>
-                You will be assigned a personal manager who will be available to assist you with any questions you may have.
-              </p>
-            </div>
-            <div class="why__item">
-              <div class="why__item-icon">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#why-icon3"></use>
-                </svg>
-              </div>
-              <h3>Mobile tracking</h3>
-              <p>
-                Always track your fleet with our mobile applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="free">
-        <div class="container free__container">
-          <div class="free__inner">
-            <div class="free__info">
-              <h2>
-                Try our 14-day free trial
-              </h2>
-              <p>
-                Our tracking and logistics system is designed to reduce fleet maintenance costs and improve overall business productivity.
-                Additionally, we offer free switching to our software using your current trackers.
-              </p>
-              <a href="#" class="free__btn orange-btn">
-                Start Trial Now
+                <span class="transition-all group-hover:text-white xl:hidden"
+                  >Log in</span
+                >
               </a>
-            </div>
-            <div class="free__img">
-              <img width="1171" height="648" src="../img/free-img.webp" alt="">
+              <a
+                aria-label="Leave request"
+                href="#"
+                class="orange-btn lg:hidden"
+                >Leave request</a
+              >
+              <button
+                aria-label="Menu"
+                class="burger hidden h-[58px] w-[58px] flex-col justify-center gap-1 rounded-full border-2 border-mainblue p-[10px] lg:flex medium:h-12 medium:w-12 small:h-10 small:w-10 small:px-[6px]"
+              >
+                <span class="h-[2px] w-full bg-mainblue"></span>
+                <span class="h-[2px] w-full bg-mainblue"></span>
+                <span class="h-[2px] w-full bg-mainblue"></span>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="map" class="map">
-        <div class="map__content contact">
-          <div class="contact__head">
-            <h2 class="section-title">
-              Leave a request and we will contact you soon
-            </h2>
+      </header>
+      <main>
+        <section id="hero" class="p-[30px] pb-0 big:px-[10px] tbl:p-[10px]">
+          <div
+            class="hero__inner flex min-h-[640px] items-end overflow-hidden rounded-[50px] bg-[url('../img/hero-bg-big.webp')] bg-cover bg-center bg-no-repeat px-[50px] pb-[50px] tbl:rounded-[30px] tbl:px-5 small:min-h-[95vh] small:px-[10px] small:pb-5"
+          >
+            <div class="container">
+              <div class="hero-info relative">
+                <h1
+                  class="relative z-[2] font-mont text-[52px] font-semibold uppercase leading-tight text-white medium:text-[36px] small:text-[28px]"
+                >
+                  logistics <br />
+                  videotracking <br />
+                  Vehicle Monitoring
+                </h1>
+              </div>
+            </div>
           </div>
-          <div class="contact__inner">
-            <div class="contact__left">
-              <div class="contact__left-row">
-                <h3>Support</h3>
-                <a href="#">
-                  <svg class="">
-                    <use xlink:href="img/sprite.svg#tel"></use>
-                  </svg>
-                  <span>+</span>7 (800) 333-68-83
-                </a>
-                <a href="#">
-                  <svg class="">
-                    <use xlink:href="img/sprite.svg#mail"></use>
-                  </svg>
-                  ru.support@kgk-global.com
-                </a>
-              </div>
-              <div class="contact__left-row">
-                <h3>Connect to the service:</h3>
-                <a href="#">
-                  <svg class="">
-                    <use xlink:href="img/sprite.svg#tel"></use>
-                  </svg>
-                  <span>+</span>7 (495) 668-09-98
-                </a>
-                <a href="#">
-                  <svg class="">
-                    <use xlink:href="img/sprite.svg#mail"></use>
-                  </svg>
-                  ru.sales@kgk-global.com
-                </a>
-              </div>
-              <div class="contact__left-row">
-                <h3>Address</h3>
-                <p>
-                  <img width="24" height="24" src="./img/pin.svg" alt="">
-                  <span>
-                    Highgate Hill, London, UK
-                  </span>
+        </section>
+        <section id="optimizing" class="pt-[100px] medium:pt-[60px]">
+          <div class="container">
+            <!-- inner -->
+            <div class="flex gap-5 laptop2:flex-col">
+              <!-- left -->
+              <div
+                class="max-w-[360px] laptop:max-w-[340px] laptop2:max-w-full"
+              >
+                <h2
+                  class="text-[39px] font-semibold uppercase leading-tight medium:text-[30px]"
+                >
+                  OPTIMIZING TRANSPORTATION COSTS
+                </h2>
+                <p class="mt-5 text-base leading-[24px] text-darkgrey">
+                  Sputnik Monitor offers a wide range of additional services and
+                  features to enhance competitiveness in the market. This
+                  includes speed and direction monitoring, energy consumption
+                  analysis, vehicle diagnostics, and more.
+                </p>
+                <p class="mt-6 text-base leading-[24px] text-darkgrey">
+                  The company also provides flexible APIs and integration with
+                  existing fleet management systems for maximum compatibility
+                  and ease of use.
                 </p>
               </div>
-              <div class="contact__left-row">
-                <h3>Follow us on social media:</h3>
-                <div class="contact__socials">
-                  <a href="#">
-                    <img width="50" height="50" src="./img//facebook.svg" alt="">
-                  </a>
-                  <a href="#">
-                    <img width="50" height="50" src="./img//vk.svg" alt="">
-                  </a>
+              <!-- right -->
+              <div
+                class="grid grid-cols-3 gap-5 lg:mx-auto lg:max-w-[500px] lg:grid-cols-1"
+              >
+                <div
+                  class="flex flex-col overflow-hidden rounded-[40px] bg-lightgrey px-5 pt-[30px]"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="rounded-[30px] border-2 border-mainblack px-5 py-[13px] text-lg leading-none"
+                    >
+                      Optimizing
+                    </div>
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.5 11C40.5 10.1716 39.8284 9.5 39 9.5H25.5C24.6716 9.5 24 10.1716 24 11C24 11.8284 24.6716 12.5 25.5 12.5H37.5V24.5C37.5 25.3284 38.1716 26 39 26C39.8284 26 40.5 25.3284 40.5 24.5V11ZM10.0607 42.0607L40.0607 12.0607L37.9393 9.93934L7.93934 39.9393L10.0607 42.0607Z"
+                        fill="#01121D"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-[60px] laptop:mt-[30px] laptop2:mb-5">
+                    <h3
+                      class="text-[24px] font-normal uppercase leading-tight laptop:text-[22px]"
+                    >
+                      Optimizing Transportation Costs
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px]">
+                      Control of equipment operation, working hours,
+                      unauthorized downtime, and route deviations
+                    </p>
+                  </div>
+                  <p
+                    class="relative mt-auto text-center text-[120px] leading-none text-mainorange small:text-[100px]"
+                  >
+                    ≤15%
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col overflow-hidden rounded-[40px] bg-lightgrey px-5 pt-[30px]"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="rounded-[30px] border-2 border-mainblack px-5 py-[13px] text-lg leading-none"
+                    >
+                      Minimizing costs
+                    </div>
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.5 11C40.5 10.1716 39.8284 9.5 39 9.5H25.5C24.6716 9.5 24 10.1716 24 11C24 11.8284 24.6716 12.5 25.5 12.5H37.5V24.5C37.5 25.3284 38.1716 26 39 26C39.8284 26 40.5 25.3284 40.5 24.5V11ZM10.0607 42.0607L40.0607 12.0607L37.9393 9.93934L7.93934 39.9393L10.0607 42.0607Z"
+                        fill="#01121D"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-[60px] laptop:mt-[30px] laptop2:mb-5">
+                    <h3
+                      class="text-[24px] font-normal uppercase leading-tight laptop:text-[22px]"
+                    >
+                      Reducing fuel <br />
+                      costs
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px]">
+                      Minimizing expenses by analyzing fleet performance and
+                      increasing driver discipline
+                    </p>
+                  </div>
+                  <p
+                    class="relative mt-auto text-center text-[120px] leading-none text-mainorange small:text-[100px]"
+                  >
+                    ≤30%
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col overflow-hidden rounded-[40px] bg-lightgrey px-5 pt-[30px]"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="rounded-[30px] border-2 border-mainblack px-5 py-[13px] text-lg leading-none"
+                    >
+                      Increased savings
+                    </div>
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.5 11C40.5 10.1716 39.8284 9.5 39 9.5H25.5C24.6716 9.5 24 10.1716 24 11C24 11.8284 24.6716 12.5 25.5 12.5H37.5V24.5C37.5 25.3284 38.1716 26 39 26C39.8284 26 40.5 25.3284 40.5 24.5V11ZM10.0607 42.0607L40.0607 12.0607L37.9393 9.93934L7.93934 39.9393L10.0607 42.0607Z"
+                        fill="#01121D"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-[60px] laptop:mt-[30px] laptop2:mb-5">
+                    <h3
+                      class="text-[24px] font-normal uppercase leading-tight laptop:text-[22px]"
+                    >
+                      Increasing <br />
+                      economic efficiency
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px]">
+                      Reducing fuel costs, managing fleet maintenance and
+                      repair, minimizing losses
+                    </p>
+                  </div>
+                  <p
+                    class="relative mt-auto text-center text-[120px] leading-none text-mainorange small:text-[100px]"
+                  >
+                    ≤25%
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="contact__right">
-              <div class="contact__form">
-                <div class="contact__form-inner">
-                  <div class="contact__form-group">
-                    <input class="input-reset" type="text" placeholder="Your name">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#user"></use>
-                    </svg>
+          </div>
+        </section>
+        <section id="discover" class="pt-[100px] medium:pt-[60px]">
+          <div class="container">
+            <h2
+              class="text-center text-[39px] font-semibold uppercase leading-tight medium:text-[30px]"
+            >
+              Discover what our monitoring system can do
+            </h2>
+            <!-- inner -->
+            <div class="mt-10 lg:flex lg:flex-col lg:gap-5 small:mt-5">
+              <div
+                class="active discover__tabs flex items-center gap-[15px] big:grid big:grid-cols-4 lg:grid-cols-2 small:grid-cols-1 small:gap-[10px]"
+              >
+                <button
+                  data-tab="1"
+                  class="active shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Reports
+                </button>
+                <button
+                  data-tab="2"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Fuel and Sensors
+                </button>
+                <button
+                  data-tab="3"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Notifications
+                </button>
+                <button
+                  data-tab="4"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Geofences
+                </button>
+                <button
+                  data-tab="5"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Maintenance
+                </button>
+                <button
+                  data-tab="6"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Analytics
+                </button>
+                <button
+                  data-tab="7"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Integration
+                </button>
+                <button
+                  data-tab="8"
+                  class="shrink-0 rounded-[30px] border-2 border-mainblack px-[30px] py-[10px] text-lg font-semibold leading-none transition-all hover:border-mainblue hover:bg-mainblue hover:text-white"
+                >
+                  Traffic Violations
+                </button>
+              </div>
+              <div
+                class="active discover__tab-content discover__tab-content--1 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
                   </div>
-                  <div class="contact__form-group">
-                    <input class="input-reset" type="email" placeholder="E-mail">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#mail"></use>
-                    </svg>
-                  </div>
-                  <div class="contact__form-group">
-                    <input class="input-reset" type="tel" placeholder="Phone">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#tel"></use>
-                    </svg>
-                  </div>
-                  <div class="contact__form-group">
-                    <input class="input-reset" type="text" placeholder="Organization">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#org"></use>
-                    </svg>
-                  </div>
-                  <div class="contact__form-group">
-                    <textarea class="input-reset" placeholder="Your comment"></textarea>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="contact__form-bottom">
-                  <label class="custom-checkbox">
-                    <input checked type="checkbox" class="custom-checkbox__field">
-                    <span class="custom-checkbox__content">I have read the <a href="#">Privacy Policy</a> and give my <br> consent to the processing of personal data*</span>
-                  </label>
-                  <button class="btn-reset contact__form-btn orange-btn">
-                    Send request
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--2 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      2 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--3 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      3 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--4 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      4 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--5 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      5 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--6 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      6 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--7 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      7 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+              <div
+                class="discover__tab-content discover__tab-content--8 relative mt-5 h-[600px] overflow-hidden rounded-[50px] bg-black px-[60px] py-[62px] lg:h-auto lg:pb-0 tbl:px-[30px] tbl:pt-[30px] medium:rounded-[30px] small:mt-0 small:p-5 small:pb-0"
+              >
+                <div
+                  class="discover-card relative z-[3] max-w-[367px] p-[30px] text-white lg:max-w-full small:p-5"
+                >
+                  <div>
+                    <h3
+                      class="text-[24px] font-semibold uppercase leading-tight medium:text-[20px]"
+                    >
+                      8 vehicle monitoring <br />
+                      reports
+                    </h3>
+                    <p class="mt-[15px] text-base leading-[24px] small:text-sm">
+                      Crucial for fleet management, providing valuable
+                      information about vehicle operation, movements,
+                      performance, and safety.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] small:mt-5">
+                    <h4
+                      class="text-[18px] font-semibold uppercase leading-tight small:text-base"
+                    >
+                      Report Contents:
+                    </h4>
+                    <ul class="mt-[15px] flex flex-col gap-[15px]">
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Routes and Movements
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel and Energy Consumption
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Performance and Utilization
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Maintenance
+                      </li>
+                      <li
+                        class="flex gap-[5px] text-base leading-[24px] small:text-sm"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Safety and Compliance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  class="absolute bottom-0 left-[340px] laptop2:left-[125px] lg:relative lg:bottom-auto lg:left-auto lg:mt-5"
+                  loading="lazy"
+                  width="1156"
+                  height="600"
+                  src="./img/macbook.webp"
+                  alt="Macbook"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="solutions" class="pt-[100px] tbl:pt-[60px]">
+          <div class="container">
+            <h2
+              class="text-[39px] font-semibold uppercase leading-tight medium:text-[30px]"
+            >
+              Proven Solutions
+            </h2>
+            <!-- inner -->
+            <div
+              class="mt-[50px] flex w-full gap-[30px] xl:flex-col tbl:mt-[30px]"
+            >
+              <!-- left -->
+              <div class="w-full max-w-[432px] shrink-0 xl:max-w-full">
+                <div
+                  class="solutions__tabs flex flex-col gap-[15px] xl:grid xl:grid-cols-2 lg:grid-cols-1 small:gap-[10px]"
+                >
+                  <button
+                    data-tab="1"
+                    class="active group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.31429 20.1729C7.61762 20.1729 7.05078 20.7396 7.05078 21.4363C7.05078 22.133 7.61757 22.6998 8.31429 22.6998C9.01096 22.6998 9.57775 22.133 9.57775 21.4363C9.57775 20.7396 9.01096 20.1729 8.31429 20.1729Z"
+                      />
+                      <path
+                        d="M8.31392 15.625C5.10918 15.625 2.50195 18.2322 2.50195 21.4369C2.50195 24.6416 5.10918 27.2488 8.31392 27.2488C11.5187 27.2488 14.1258 24.6416 14.1258 21.4369C14.1259 18.2322 11.5187 15.625 8.31392 15.625ZM8.31397 24.2166C6.78129 24.2166 5.53436 22.9696 5.53436 21.437C5.53436 19.9043 6.78129 18.6574 8.31397 18.6574C9.84665 18.6574 11.0936 19.9043 11.0936 21.437C11.0936 22.9696 9.84665 24.2166 8.31397 24.2166Z"
+                      />
+                      <path
+                        d="M23.6793 20.1729C21.7255 20.1729 20.1416 21.7567 20.1416 23.7105C20.1416 25.6644 21.7255 27.2482 23.6793 27.2482C25.6331 27.2482 27.217 25.6644 27.217 23.7105C27.217 21.7567 25.6331 20.1729 23.6793 20.1729ZM23.6793 24.4686C23.2606 24.4686 22.9212 24.1292 22.9212 23.7105C22.9212 23.2918 23.2606 22.9525 23.6793 22.9525C24.0979 22.9525 24.4374 23.2918 24.4374 23.7105C24.4374 24.1292 24.0979 24.4686 23.6793 24.4686Z"
+                      />
+                      <path
+                        d="M27.6191 13.7061H25.2442V10.8818C25.2442 10.7424 25.3576 10.6291 25.4969 10.6291H26.1539C26.5725 10.6291 26.912 10.2897 26.912 9.87101C26.912 9.45235 26.5725 9.11293 26.1539 9.11293H25.4969C24.5215 9.11293 23.728 9.90643 23.728 10.8818V13.7061H19.7356L17.5935 5.26615H18.1351C18.5538 5.26615 18.8932 4.92674 18.8932 4.50808C18.8932 4.08942 18.5538 3.75 18.1351 3.75H6.62908C6.21042 3.75 5.871 4.08942 5.871 4.50808C5.871 4.92674 6.21042 5.26615 6.62908 5.26615H6.79025L5.91452 12.9283C4.77988 13.2493 3.71094 13.7957 2.78336 14.5408C2.45698 14.8029 2.40488 15.2801 2.66707 15.6065C2.92926 15.9329 3.40635 15.9849 3.73283 15.7228C5.04612 14.6679 6.63009 14.1103 8.31358 14.1103C12.3543 14.1103 15.6417 17.3977 15.6417 21.4384C15.6417 21.8122 15.6132 22.1877 15.5569 22.5543C15.4935 22.9682 15.7775 23.3551 16.1914 23.4186C16.2303 23.4245 16.269 23.4274 16.3072 23.4274C16.6752 23.4274 16.9981 23.1591 17.0556 22.7842C17.0854 22.59 17.1084 22.3937 17.1251 22.1965H18.856C19.5015 20.1481 21.4187 18.6586 23.6774 18.6586C25.7574 18.6586 27.5477 19.9218 28.3221 21.7212C28.3573 21.6338 28.3772 21.5385 28.3772 21.4384V14.4642C28.3772 14.0455 28.0378 13.7061 27.6191 13.7061ZM8.31363 12.5942C8.03263 12.5942 7.7525 12.6083 7.47403 12.6351L8.3162 5.26615H13.317V13.7061H12.6025C11.3314 12.9982 9.86895 12.5942 8.31363 12.5942ZM14.8332 13.7061V5.26615H16.0292L18.1713 13.7061H14.8332Z"
+                      />
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >For Specialized Equipment</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    data-tab="2"
+                    class="group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.89092 22.8256C4.35066 22.8256 3.9127 22.3876 3.9127 21.8474C3.9127 21.3071 4.35066 20.8691 4.89092 20.8691C5.43117 20.8691 5.86914 21.3071 5.86914 21.8474C5.86914 22.3876 5.43117 22.8256 4.89092 22.8256Z"
+                      />
+                      <path
+                        d="M17.2815 22.8256C16.7413 22.8256 16.3033 22.3876 16.3033 21.8474C16.3033 21.3071 16.7413 20.8691 17.2815 20.8691C17.8218 20.8691 18.2598 21.3071 18.2598 21.8474C18.2598 22.3876 17.8218 22.8256 17.2815 22.8256Z"
+                      />
+                      <path
+                        d="M4.8912 16.9561H17.282C18.3838 16.9561 19.3981 17.3266 20.2167 17.9436V12.065C20.2167 11.6214 20.5154 11.2332 20.944 11.1196C21.3713 11.0062 21.8234 11.1947 22.0445 11.5797L29.8702 25.2748C30.2418 25.9267 29.7712 26.7383 29.0207 26.7383H25.1078C23.5069 26.7383 22.0877 25.9619 21.1949 24.7696C20.3021 25.9619 18.8829 26.7383 17.282 26.7383H4.8912C2.19413 26.7383 8.58307e-05 24.5443 8.58307e-05 21.8472C2.67029e-05 19.1501 2.19407 16.9561 4.8912 16.9561ZM17.282 24.7819C18.9003 24.7819 20.2167 23.4654 20.2167 21.8472C20.2167 20.229 18.9003 18.9125 17.282 18.9125C15.6638 18.9125 14.3474 20.229 14.3474 21.8472C14.3474 23.4654 15.6638 24.7819 17.282 24.7819ZM4.8912 24.7819C6.50944 24.7819 7.82587 23.4654 7.82587 21.8472C7.82587 20.229 6.50944 18.9125 4.8912 18.9125C3.27296 18.9125 1.95653 20.229 1.95653 21.8472C1.95653 23.4654 3.27296 24.7819 4.8912 24.7819Z"
+                      />
+                      <path
+                        d="M4.89072 3.26172H10.7601C11.2091 3.26172 11.6001 3.56711 11.709 4.0027L13.4802 11.0876H14.3469V10.1093C14.3469 9.56899 14.785 9.13111 15.3251 9.13111C15.8652 9.13111 16.3033 9.56899 16.3033 10.1093V11.617C17.4709 12.2948 18.2598 13.5559 18.2598 15.0005V15.0786C17.9394 15.0324 17.6145 15.0005 17.2815 15.0005H4.89072C3.83961 15.0005 2.84697 15.2455 1.95605 15.6705V6.19639C1.95599 4.57814 3.27248 3.26172 4.89072 3.26172ZM5.86894 10.1093C5.86894 10.6496 6.30693 11.0876 6.84717 11.0876H11.4637L9.99646 5.21822H6.84717C6.30693 5.21822 5.86894 5.65621 5.86894 6.19645V10.1093Z"
+                      />
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >For Agricultural Machinery</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    data-tab="3"
+                    class="group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.7913 4.7168H2.50558C2.02549 4.7168 1.64844 5.09385 1.64844 5.57394V15.8597C1.64844 16.331 2.02549 16.7168 2.50558 16.7168H18.7913C19.2627 16.7168 19.6484 16.331 19.6484 15.8597V5.57394C19.6484 5.09385 19.2628 4.7168 18.7913 4.7168Z"
+                      />
+                      <path
+                        d="M1.63867 21.0022C1.63867 21.4735 2.02439 21.8593 2.49581 21.8593H3.42153C3.78153 20.0678 5.25582 18.6622 7.0901 18.4307H2.50439C2.19573 18.4307 1.91304 18.3792 1.63867 18.2764V21.0022Z"
+                      />
+                      <path
+                        d="M26.4432 21.8591H27.5061C27.9775 21.8591 28.3632 21.4733 28.3632 21.002V13.4934C28.3632 12.1476 25.0804 9.00195 23.2804 9.00195H21.3604V15.8591C21.3604 17.2733 20.2032 18.4305 18.789 18.4305H8.20312C10.0375 18.662 11.5118 20.0676 11.8717 21.8591H17.9917C18.3861 19.8877 20.1261 18.3877 22.2175 18.3877C24.3004 18.3876 26.0489 19.8876 26.4432 21.8591ZM22.766 11.1104C27.1546 10.8962 26.9747 15.4304 26.9747 15.4304H22.766V11.1104Z"
+                      />
+                      <path
+                        d="M22.2155 25.2836C23.6452 25.2836 24.8041 24.1246 24.8041 22.695C24.8041 21.2654 23.6452 20.1064 22.2155 20.1064C20.7859 20.1064 19.627 21.2654 19.627 22.695C19.627 24.1246 20.7859 25.2836 22.2155 25.2836Z"
+                      />
+                      <path
+                        d="M7.64228 25.2836C9.07191 25.2836 10.2309 24.1246 10.2309 22.695C10.2309 21.2654 9.07191 20.1064 7.64228 20.1064C6.21265 20.1064 5.05371 21.2654 5.05371 22.695C5.05371 24.1246 6.21265 25.2836 7.64228 25.2836Z"
+                      />
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >For Freight Transport</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    data-tab="4"
+                    class="group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.2618 14.2926C26.0771 14.2772 26.6925 13.6465 26.6925 12.8619C26.6925 12.0619 26.0618 11.4465 25.2464 11.4311C24.831 11.4311 24.4002 11.4157 23.9848 11.4311C23.7848 11.4311 23.7233 11.3695 23.6618 11.1849C23.2925 10.1388 22.9079 9.09262 22.5079 8.06185C22.2464 7.38493 21.7541 6.89262 21.031 6.73878C20.2925 6.58493 19.5387 6.44647 18.7848 6.35416C18.4618 6.32339 18.1387 6.29262 17.8156 6.26185C17.8156 6.24647 17.8156 6.24647 17.8156 6.23108C17.8156 5.40032 17.1387 4.70801 16.2925 4.70801H13.7079C12.8771 4.70801 12.1848 5.38493 12.1848 6.23108V6.26185C11.1694 6.33878 10.1541 6.46185 9.15406 6.67724C8.29252 6.87724 7.72329 7.38493 7.43098 8.2157C7.07714 9.18493 6.70791 10.1542 6.35406 11.1388C6.27714 11.3542 6.20021 11.4465 5.95406 11.4311C5.53868 11.4003 5.10791 11.4157 4.69252 11.4311C3.89252 11.4619 3.29252 12.0926 3.30791 12.8926C3.32329 13.6619 3.93868 14.2772 4.72329 14.308H5.20021C5.13868 14.4772 5.10791 14.6003 5.04637 14.7234C4.64637 15.6772 4.46175 16.6772 4.50791 17.708C4.52329 18.2157 4.50791 18.7234 4.50791 19.2311C4.50791 20.6619 4.49252 22.0926 4.52329 23.5234C4.53868 24.3234 5.13868 25.0157 5.90791 25.2157C7.13868 25.5234 8.27714 24.6619 8.32329 23.3849C8.33868 23.0772 8.32329 22.7695 8.32329 22.4311H21.6771V23.3388C21.6925 24.2926 22.3541 25.0926 23.2464 25.2465C24.4618 25.4619 25.5233 24.508 25.5079 23.2926C25.4925 21.2619 25.5233 19.2311 25.4925 17.2003C25.4771 16.6157 25.3387 16.0311 25.2156 15.4619C25.1233 15.0772 24.9541 14.708 24.8156 14.2926C24.9848 14.2926 25.1233 14.2926 25.2618 14.2926ZM8.66175 11.0926C8.92329 10.3234 9.18483 9.56955 9.43098 8.80032C9.49252 8.6157 9.56944 8.56955 9.75406 8.56955H20.2618C20.4002 8.56955 20.5079 8.56955 20.5541 8.73878C20.9848 10.0465 21.4156 11.3542 21.8464 12.6619C21.8618 12.708 21.8771 12.7695 21.8925 12.8465C17.2771 12.8465 12.7079 12.8465 8.09252 12.8465C8.29252 12.2465 8.47714 11.6772 8.66175 11.0926ZM7.84637 18.5849C7.04637 18.5849 6.4156 17.9542 6.40021 17.1542C6.40021 16.3695 7.04637 15.708 7.83098 15.7234C8.6156 15.7234 9.24637 16.3695 9.26175 17.1388C9.27714 17.9388 8.64637 18.5849 7.84637 18.5849ZM22.1541 18.5849C21.3541 18.5849 20.7233 17.9388 20.7233 17.1542C20.7233 16.3695 21.3848 15.7234 22.1694 15.7388C22.9541 15.7542 23.6002 16.4157 23.5848 17.2003C23.5848 17.9542 22.9387 18.5849 22.1541 18.5849Z"
+                      />
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >For Light Commercial Vehicles</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    data-tab="5"
+                    class="group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.875 25.9375H8.125C7.6075 25.9375 7.1875 26.3575 7.1875 26.875C7.1875 27.3925 7.6075 27.8125 8.125 27.8125H21.875C22.3925 27.8125 22.8125 27.3925 22.8125 26.875C22.8125 26.3575 22.3925 25.9375 21.875 25.9375Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M28.4375 15C28.4375 13.7562 27.9438 12.565 27.065 11.685C26.185 10.8062 24.9937 10.3125 23.75 10.3125C19.03 10.3125 10.97 10.3125 6.25 10.3125C5.00625 10.3125 3.815 10.8062 2.935 11.685C2.05625 12.565 1.5625 13.7562 1.5625 15V18.75C1.5625 19.9937 2.05625 21.185 2.935 22.065C3.815 22.9438 5.00625 23.4375 6.25 23.4375H23.75C24.9937 23.4375 26.185 22.9438 27.065 22.065C27.9438 21.185 28.4375 19.9937 28.4375 18.75V15ZM15 13.4375C13.1025 13.4375 11.5625 14.9775 11.5625 16.875C11.5625 18.7725 13.1025 20.3125 15 20.3125C16.8975 20.3125 18.4375 18.7725 18.4375 16.875C18.4375 14.9775 16.8975 13.4375 15 13.4375ZM15 15.3125C15.8625 15.3125 16.5625 16.0125 16.5625 16.875C16.5625 17.7375 15.8625 18.4375 15 18.4375C14.1375 18.4375 13.4375 17.7375 13.4375 16.875C13.4375 16.0125 14.1375 15.3125 15 15.3125Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.9595 8.3175C13.5283 7.9975 14.2358 7.8125 14.9995 7.8125C15.7645 7.8125 16.472 7.9975 17.0408 8.3175C17.492 8.57125 18.0633 8.41125 18.3183 7.96C18.572 7.50875 18.412 6.9375 17.9608 6.6825C17.1358 6.21875 16.1108 5.9375 14.9995 5.9375C13.8895 5.9375 12.8645 6.21875 12.0395 6.6825C11.5883 6.9375 11.4283 7.50875 11.682 7.96C11.937 8.41125 12.5083 8.57125 12.9595 8.3175Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.069 4.9925C12.164 4.405 13.5265 4.0625 15.0003 4.0625C16.474 4.0625 17.8365 4.405 18.9315 4.9925C19.3878 5.2375 19.9565 5.06625 20.2015 4.61C20.4465 4.15375 20.274 3.585 19.819 3.34125C18.4753 2.62 16.8078 2.1875 15.0003 2.1875C13.1928 2.1875 11.5253 2.62 10.1815 3.34125C9.72651 3.585 9.55401 4.15375 9.79901 4.61C10.044 5.06625 10.6128 5.2375 11.069 4.9925Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.35 24.6875H9.64995L9.0987 26.6175C9.01745 26.9 9.07495 27.205 9.2512 27.44C9.4287 27.675 9.7062 27.8125 9.99995 27.8125H20C20.2937 27.8125 20.5712 27.675 20.7487 27.44C20.925 27.205 20.9825 26.9 20.9012 26.6175L20.35 24.6875Z"
+                      />
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >Video Monitoring</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    data-tab="6"
+                    class="group flex w-full items-center justify-between gap-2 rounded-[40px] border-2 border-mainblack px-5 py-[18px] transition-all hover:border-mainblue hover:bg-mainblue hover:text-white small:py-3"
+                  >
+                    <svg
+                      class="pointer-events-none fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M14.3047 21.4072V27.0898H19.0845C19.4821 25.4232 20.9827 24.1799 22.7693 24.1799C24.5559 24.1799 26.0565 25.4232 26.4541 27.0898H30.0015V22.9953L25.6493 21.4072H14.3047Z"
+                        />
+                        <path
+                          d="M7.4751 27.9685C7.4751 26.8486 6.56396 25.9375 5.44412 25.9375C4.32422 25.9375 3.41309 26.8486 3.41309 27.9685C3.41309 29.0884 4.32422 29.9995 5.44412 29.9995C6.56396 29.9995 7.4751 29.0884 7.4751 27.9685Z"
+                        />
+                        <path
+                          d="M12.5452 19.6496V17.2949C12.2079 16.9818 11.4922 16.3139 10.6761 15.5332H6.51791L3.31348 19.6497H12.5452V19.6496Z"
+                        />
+                        <path
+                          d="M14.3047 17.1389V19.6497H23.4209L20.1414 15.5332H15.9983C15.2998 16.204 14.6786 16.7889 14.3047 17.1389Z"
+                        />
+                        <path
+                          d="M12.5454 21.4078H1.73988V21.376L0 22.7978V27.0903H1.75986C2.15742 25.4238 3.65812 24.1804 5.44471 24.1804C7.23129 24.1804 8.73193 25.4238 9.12949 27.0903H12.5454L12.5454 21.4078Z"
+                        />
+                        <path
+                          d="M22.7683 29.9995C23.89 29.9995 24.7993 29.0902 24.7993 27.9685C24.7993 26.8468 23.89 25.9375 22.7683 25.9375C21.6466 25.9375 20.7373 26.8468 20.7373 27.9685C20.7373 29.0902 21.6466 29.9995 22.7683 29.9995Z"
+                        />
+                        <path
+                          d="M13.3421 0C11.6077 0 9.97831 0.668789 8.75394 1.88326C7.52956 3.09773 6.84783 4.72154 6.83417 6.45563C6.81865 8.42432 7.76148 9.96908 8.55507 10.9184C9.51314 12.0643 12.1494 14.5604 13.3404 15.6749C14.5039 14.5808 17.0555 12.1539 18.1271 10.9195C18.9131 10.014 19.8501 8.51367 19.8501 6.50807C19.8502 2.91949 16.9306 0 13.3421 0ZM13.3421 10.8165C10.9664 10.8165 9.03367 8.88375 9.03367 6.50807C9.03367 4.13238 10.9664 2.19967 13.3421 2.19967C15.7177 2.19967 17.6504 4.13238 17.6504 6.50807C17.6504 8.88375 15.7177 10.8165 13.3421 10.8165Z"
+                        />
+                        <path
+                          d="M13.3416 3.95801C11.9352 3.95801 10.791 5.10217 10.791 6.50859C10.791 7.91502 11.9352 9.05918 13.3416 9.05918C14.748 9.05918 15.8921 7.91502 15.8921 6.50859C15.8921 5.10217 14.748 3.95801 13.3416 3.95801Z"
+                        />
+                      </g>
+                    </svg>
+                    <span
+                      class="pointer-events-none mr-auto text-lg font-semibold uppercase leading-tight small:text-left small:text-sm"
+                      >Logistics</span
+                    >
+                    <svg
+                      class="fill-mainblack transition-all group-hover:fill-white"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.8004 6.59961C24.8004 5.82641 24.1736 5.19961 23.4004 5.19961H10.8004C10.0272 5.19961 9.40039 5.82641 9.40039 6.59961C9.40039 7.37281 10.0272 7.99961 10.8004 7.99961H22.0004V19.1996C22.0004 19.9728 22.6272 20.5996 23.4004 20.5996C24.1736 20.5996 24.8004 19.9728 24.8004 19.1996V6.59961ZM6.39034 25.5896L24.3903 7.58956L22.4104 5.60966L4.41044 23.6097L6.39034 25.5896Z"
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
+              <!-- right -->
+              <div class="w-full">
+                <div
+                  class="active solutions__tab-content solutions__tab-content--1 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="solutions__tab-content solutions__tab-content--2 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="solutions__tab-content solutions__tab-content--3 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="solutions__tab-content solutions__tab-content--4 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="solutions__tab-content solutions__tab-content--5 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="solutions__tab-content solutions__tab-content--6 h-full w-full gap-[30px] rounded-[30px] bg-lightgrey p-5"
+                >
+                  <div
+                    class="h-full overflow-hidden rounded-[20px] medium:hidden"
+                  >
+                    <img
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                      width="350"
+                      height="431"
+                      src="./img/solutions-img.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold uppercase leading-tight">
+                      Our Capabilities for Specialized Equipment:
+                    </h3>
+                    <ul class="mt-[15px] flex flex-col gap-[10px]">
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Location Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Hour Meter Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Fuel Consumption Control
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Mechanism Operation Monitoring
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Analysis of Equipment Utilization Efficiency
+                      </li>
+                      <li
+                        class="flex items-center gap-2 font-gotham leading-[150%]"
+                      >
+                        <svg
+                          class="shrink-0"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        Refrigerator Temperature Control
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <div class="footer__top-inner">
-            <div class="footer__left">
-              <div class="footer__col footer__col-1">
-                <h3>Menu</h3>
-                <ul class="list-reset">
-                  <li><a href="#">Monitoring</a></li>
-                  <li><a href="#">Solutions</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Devices</a></li>
-                  <li><a href="#">About us</a></li>
-                </ul>
+        </section>
+        <section id="request" class="py-[100px] medium:py-[60px]">
+          <div class="container">
+            <!-- inner -->
+            <div class="flex w-full gap-5 laptop2:flex-col">
+              <!-- left -->
+              <div
+                class="flex w-full justify-between gap-5 rounded-[40px] bg-[url('../img/request-bg.webp')] bg-cover bg-center bg-no-repeat p-[50px] laptop2:mx-auto laptop2:max-w-[1000px] lg:flex-col medium:rounded-[30px] medium:p-5"
+              >
+                <!-- info -->
+                <div class="max-w-[363px] text-white lg:max-w-full">
+                  <div>
+                    <h2
+                      class="text-[39px] font-semibold uppercase leading-tight medium:text-[30px]"
+                    >
+                      Leave a request or contact us
+                    </h2>
+                    <p class="mt-[15px] leading-[24px] medium:text-[20px]">
+                      Contact us by mail or phone, we are always happy to answer
+                      your questions.
+                    </p>
+                  </div>
+                  <div
+                    class="mt-[30px] flex flex-col gap-[30px] lg:grid lg:grid-cols-2 medium:grid-cols-1"
+                  >
+                    <div class="flex flex-col gap-[10px]">
+                      <h3 class="text-lg font-semibold uppercase leading-tight">
+                        Support:
+                      </h3>
+                      <a
+                        class="flex items-center gap-2 transition-colors hover:text-mainorange"
+                        href="tel:+78003336883"
+                        ><svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18 14.1833V17.1301C18 17.5676 17.6617 17.9306 17.2254 17.9614C16.8609 17.9872 16.5636 18 16.3333 18C8.9695 18 3 12.0305 3 4.66667C3 4.43642 3.01288 4.13906 3.03863 3.77458C3.06948 3.33823 3.43245 3 3.86988 3H6.81675C7.03065 3 7.2098 3.16202 7.23127 3.37483C7.25056 3.56589 7.26848 3.71928 7.28506 3.83502C7.45362 5.01227 7.79794 6.1328 8.29058 7.16919C8.36966 7.33554 8.31809 7.53466 8.16821 7.64172L6.36962 8.9265C7.4646 11.4843 9.51575 13.5354 12.0735 14.6304L13.3559 12.8349C13.4643 12.6832 13.6658 12.6311 13.8342 12.711C14.8705 13.2032 15.9909 13.5472 17.168 13.7153C17.283 13.7318 17.4354 13.7496 17.6252 13.7687C17.838 13.7902 18 13.9694 18 14.1833Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        +7 (800) 333-68-83</a
+                      >
+                      <a
+                        class="flex items-center gap-2 transition-colors hover:text-mainorange"
+                        href="mailto:ru.support@kgk-global.com"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.83333 3H17.8333C18.2936 3 18.6667 3.3731 18.6667 3.83333V17.1667C18.6667 17.6269 18.2936 18 17.8333 18H2.83333C2.3731 18 2 17.6269 2 17.1667V3.83333C2 3.3731 2.3731 3 2.83333 3ZM10.3838 10.2358L5.03935 5.69808L3.96065 6.96858L10.3942 12.4309L16.712 6.96347L15.6213 5.7032L10.3838 10.2358Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        ru.support@kgk-global.com</a
+                      >
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                      <h3 class="text-lg font-semibold uppercase leading-tight">
+                        SALES::
+                      </h3>
+                      <a
+                        class="flex items-center gap-2 transition-colors hover:text-mainorange"
+                        href="tel:+74956680998"
+                        ><svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18 14.1833V17.1301C18 17.5676 17.6617 17.9306 17.2254 17.9614C16.8609 17.9872 16.5636 18 16.3333 18C8.9695 18 3 12.0305 3 4.66667C3 4.43642 3.01288 4.13906 3.03863 3.77458C3.06948 3.33823 3.43245 3 3.86988 3H6.81675C7.03065 3 7.2098 3.16202 7.23127 3.37483C7.25056 3.56589 7.26848 3.71928 7.28506 3.83502C7.45362 5.01227 7.79794 6.1328 8.29058 7.16919C8.36966 7.33554 8.31809 7.53466 8.16821 7.64172L6.36962 8.9265C7.4646 11.4843 9.51575 13.5354 12.0735 14.6304L13.3559 12.8349C13.4643 12.6832 13.6658 12.6311 13.8342 12.711C14.8705 13.2032 15.9909 13.5472 17.168 13.7153C17.283 13.7318 17.4354 13.7496 17.6252 13.7687C17.838 13.7902 18 13.9694 18 14.1833Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        +7 (495) 668-09-98</a
+                      >
+                      <a
+                        class="flex items-center gap-2 transition-colors hover:text-mainorange"
+                        href="mailto:ru.sales@kgk-global.com"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.83333 3H17.8333C18.2936 3 18.6667 3.3731 18.6667 3.83333V17.1667C18.6667 17.6269 18.2936 18 17.8333 18H2.83333C2.3731 18 2 17.6269 2 17.1667V3.83333C2 3.3731 2.3731 3 2.83333 3ZM10.3838 10.2358L5.03935 5.69808L3.96065 6.96858L10.3942 12.4309L16.712 6.96347L15.6213 5.7032L10.3838 10.2358Z"
+                            fill="#EC7C15"
+                          />
+                        </svg>
+                        ru.sales@kgk-global.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- form -->
+                <div class="w-full max-w-[563px] lg:max-w-full">
+                  <h3
+                    class="mb-[30px] text-[24px] font-semibold uppercase leading-tight text-white"
+                  >
+                    get fleetl
+                  </h3>
+                  <form
+                    action="#"
+                    class="grid grid-cols-2 gap-5 small:flex small:flex-col small:gap-[10px]"
+                  >
+                    <input
+                      class="rounded-[55px] bg-white p-5 text-base leading-[24px] outline-none"
+                      type="text"
+                      placeholder="Name:"
+                    />
+                    <input
+                      class="rounded-[55px] bg-white p-5 text-base leading-[24px] outline-none"
+                      type="tel"
+                      placeholder="Phone:"
+                    />
+                    <input
+                      class="rounded-[55px] bg-white p-5 text-base leading-[24px] outline-none"
+                      type="text"
+                      placeholder="Company:"
+                    />
+                    <input
+                      class="rounded-[55px] bg-white p-5 text-base font-normal leading-[24px] outline-none"
+                      type="email"
+                      placeholder="E-mail:"
+                    />
+                    <textarea
+                      placeholder="Your question"
+                      class="col-span-2 min-h-[110px] resize-none rounded-[30px] bg-white p-5 text-base leading-[24px] outline-none"
+                    ></textarea>
+                    <div
+                      class="col-span-2 flex items-center justify-between gap-[10px] small:flex-col"
+                    >
+                      <label class="checkbox relative max-w-[260px]">
+                        <input type="checkbox" />
+                        <span
+                          class="checkbox-content cursor-pointer text-sm font-normal text-white"
+                          >I agree with the
+                          <a class="text-mainorange" href="#">Site Rules</a>, as
+                          well as the
+                          <a href="#" class="text-mainorange"
+                            >Site Privacy Policy</a
+                          ></span
+                        >
+                      </label>
+                      <button class="orange-btn small:w-full">
+                        Leave request
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="footer__col footer__col-2">
-                <h3>Solutions</h3>
-                <ul class="list-reset">
-                  <li><a href="#">Cargo transportation</a></li>
-                  <li><a href="#">Taxi</a></li>
-                  <li><a href="#">Corporate parks</a></li>
-                  <li><a href="#">Passenger transportation</a></li>
-                  <li><a href="#">Special equipment</a></li>
-                </ul>
-              </div>
-              <div class="footer__col footer__col-3">
-                <h3>Equipment</h3>
-                <ul class="list-reset">
-                  <li><a href="#">GPS/GLONASS trackers</a></li>
-                  <li><a href="#">Monitoring system</a></li>
-                  <li><a href="#">Autonomous air heater</a></li>
-                </ul>
+              <!-- right -->
+              <div
+                class="request-right flex w-full max-w-[360px] shrink-0 flex-col justify-between overflow-hidden rounded-[40px] bg-[url('../img/request-right-bg.webp')] bg-cover bg-center bg-no-repeat laptop2:mx-auto laptop2:min-h-[500px] laptop2:max-w-[600px] medium:rounded-[30px]"
+              >
+                <div class="relative z-[2] p-[30px]">
+                  <h3
+                    class="text-[24px] font-semibold uppercase leading-tight text-white"
+                  >
+                    Mobile App with User-Friendly Interface
+                  </h3>
+                  <p class="mt-[15px] text-sm leading-[20px] text-white">
+                    Monitor key vehicle indicators with our free mobile app for
+                    Android and IOS.
+                  </p>
+                </div>
+                <div
+                  class="relative z-[2] grid grid-cols-2 gap-4 p-5 laptop2:flex laptop2:justify-center"
+                >
+                  <a href="#">
+                    <img
+                      loading="lazy"
+                      width="151"
+                      height="49"
+                      src="./img/apple.svg"
+                      alt="Appstore"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      loading="lazy"
+                      width="151"
+                      height="49"
+                      src="./img/android.svg"
+                      alt="Google Play"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="footer__right">
-              <h3>Contacts</h3>
-              <ul class="list-reset">
+          </div>
+        </section>
+      </main>
+      <footer class="pb-[30px]">
+        <div class="container">
+          <!-- top -->
+          <div
+            class="flex items-center justify-between rounded-[70px] bg-lightgrey p-[10px] tbl:flex-col tbl:gap-[15px] tbl:rounded-[30px] tbl:p-5"
+          >
+            <a href="/">
+              <img
+                loading="lazy"
+                width="125"
+                height="50"
+                src="./img/header-logo.svg"
+                alt="Logo"
+              />
+            </a>
+            <!-- socials -->
+            <div class="flex items-center gap-[10px]">
+              <a
+                href="#"
+                aria-label="WhatsApp"
+                class="group flex h-[64px] w-[64px] items-center justify-center rounded-full border border-mainblue bg-white transition-all hover:bg-mainblue"
+              >
+                <svg
+                  class="fill-mainblue transition-all group-hover:fill-white"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M12.7149 0H12.7089C6.09241 0 0.711914 5.382 0.711914 12C0.711914 14.625 1.55791 17.058 2.99641 19.0335L1.50091 23.4915L6.11341 22.017C8.01091 23.274 10.2744 24 12.7149 24C19.3314 24 24.7119 18.6165 24.7119 12C24.7119 5.3835 19.3314 0 12.7149 0ZM19.6974 16.9455C19.4079 17.763 18.2589 18.441 17.3424 18.639C16.7154 18.7725 15.8964 18.879 13.1394 17.736C9.61291 16.275 7.34191 12.6915 7.16491 12.459C6.99541 12.2265 5.73991 10.5615 5.73991 8.8395C5.73991 7.1175 6.61441 6.279 6.96691 5.919C7.25641 5.6235 7.73491 5.4885 8.19391 5.4885C8.34241 5.4885 8.47591 5.496 8.59591 5.502C8.94841 5.517 9.12541 5.538 9.35791 6.0945C9.64741 6.792 10.3524 8.514 10.4364 8.691C10.5219 8.868 10.6074 9.108 10.4874 9.3405C10.3749 9.5805 10.2759 9.687 10.0989 9.891C9.92191 10.095 9.75391 10.251 9.57691 10.47C9.41491 10.6605 9.23191 10.8645 9.43591 11.217C9.63991 11.562 10.3449 12.7125 11.3829 13.6365C12.7224 14.829 13.8084 15.21 14.1969 15.372C14.4864 15.492 14.8314 15.4635 15.0429 15.2385C15.3114 14.949 15.6429 14.469 15.9804 13.9965C16.2204 13.6575 16.5234 13.6155 16.8414 13.7355C17.1654 13.848 18.8799 14.6955 19.2324 14.871C19.5849 15.048 19.8174 15.132 19.9029 15.2805C19.9869 15.429 19.9869 16.1265 19.6974 16.9455Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="Telegram"
+                class="group flex h-[64px] w-[64px] items-center justify-center rounded-full border border-mainblue bg-white transition-all hover:bg-mainblue"
+              >
+                <svg
+                  class="fill-mainblue transition-all group-hover:fill-white"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M10.1291 15.1814L9.73209 20.7654C10.3001 20.7654 10.5461 20.5214 10.8411 20.2284L13.5041 17.6834L19.0221 21.7244C20.0341 22.2884 20.7471 21.9914 21.0201 20.7934L24.6421 3.82141L24.6431 3.82041C24.9641 2.32441 24.1021 1.73941 23.1161 2.10641L1.82609 10.2574C0.373092 10.8214 0.395092 11.6314 1.57909 11.9984L7.02209 13.6914L19.6651 5.78041C20.2601 5.38641 20.8011 5.60441 20.3561 5.99841L10.1291 15.1814Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="group flex h-[64px] w-[64px] items-center justify-center rounded-full border border-mainblue bg-white transition-all hover:bg-mainblue"
+              >
+                <svg
+                  class="fill-mainblue transition-all group-hover:fill-white"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_264_2574)">
+                    <path
+                      d="M12.2627 1C5.91141 1 0.762695 6.14872 0.762695 12.5C0.762695 18.24 4.96807 22.9975 10.4658 23.8603V15.8242H7.54588V12.5H10.4658V9.9664C10.4658 7.08422 12.1827 5.49218 14.8095 5.49218C16.0677 5.49218 17.3838 5.71679 17.3838 5.71679V8.54687H15.9336C14.5051 8.54687 14.0596 9.43333 14.0596 10.3428V12.5H17.249L16.7392 15.8242H14.0596V23.8603C19.5573 22.9975 23.7627 18.24 23.7627 12.5C23.7627 6.14872 18.6139 1 12.2627 1Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <!-- cta -->
+            <div class="relative z-[2] flex gap-[10px]">
+              <a
+                aria-label="Login"
+                href="#"
+                class="group flex items-center gap-[5px] rounded-[40px] border-2 border-mainblue bg-white px-5 py-[15px] font-bold text-mainblue transition-all hover:bg-mainblue xl:p-[15px] medium:p-[10px] small:py-[6px]"
+              >
+                <svg
+                  class="fill-[#1596EC] transition-all group-hover:fill-white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 11V8L15 12L10 16V13H1V11H10ZM2.4578 15H4.58152C5.76829 17.9318 8.64262 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9H2.4578C3.73207 4.94289 7.52236 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C7.52236 22 3.73207 19.0571 2.4578 15Z"
+                  />
+                </svg>
+                <span class="transition-all group-hover:text-white"
+                  >Log in</span
+                >
+              </a>
+              <a aria-label="Leave request" href="#" class="orange-btn"
+                >Leave request</a
+              >
+            </div>
+          </div>
+          <!-- inner -->
+          <div
+            class="relative mt-10 flex justify-between gap-5 xl:grid xl:grid-cols-2 xl:gap-y-6 medium:grid-cols-1"
+          >
+            <!-- col -->
+            <div class="max-w-[324px]">
+              <h3 class="text-lg font-semibold uppercase leading-tight">
+                contact us
+              </h3>
+              <ul
+                class="mt-5 flex flex-col gap-[15px] text-base leading-[24px]"
+              >
                 <li>
-                  <a href="#" class="footer__phone">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#tel"></use>
+                  <a href="tel:+78003336883" class="flex items-center gap-2">
+                    <svg
+                      class="shrink-0"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18 14.1833V17.1301C18 17.5676 17.6617 17.9306 17.2254 17.9614C16.8609 17.9872 16.5636 18 16.3333 18C8.9695 18 3 12.0305 3 4.66667C3 4.43642 3.01288 4.13906 3.03863 3.77458C3.06948 3.33823 3.43245 3 3.86988 3H6.81675C7.03065 3 7.2098 3.16202 7.23127 3.37483C7.25056 3.56589 7.26848 3.71928 7.28506 3.83502C7.45362 5.01227 7.79794 6.1328 8.29058 7.16919C8.36966 7.33554 8.31809 7.53466 8.16821 7.64172L6.36962 8.9265C7.4646 11.4843 9.51575 13.5354 12.0735 14.6304L13.3559 12.8349C13.4643 12.6832 13.6658 12.6311 13.8342 12.711C14.8705 13.2032 15.9909 13.5472 17.168 13.7153C17.283 13.7318 17.4354 13.7496 17.6252 13.7687C17.838 13.7902 18 13.9694 18 14.1833Z"
+                        fill="#EC7C15"
+                      />
                     </svg>
-                    <span>+</span>7 (800) 333-68-83
+                    +7 (800) 333-68-83
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#mail"></use>
+                  <a
+                    href="mailto:ru.support@kgk-global.com"
+                    class="flex items-center gap-2"
+                  >
+                    <svg
+                      class="shrink-0"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.83333 3H17.8333C18.2936 3 18.6667 3.3731 18.6667 3.83333V17.1667C18.6667 17.6269 18.2936 18 17.8333 18H2.83333C2.3731 18 2 17.6269 2 17.1667V3.83333C2 3.3731 2.3731 3 2.83333 3ZM10.3838 10.2358L5.03935 5.69808L3.96065 6.96858L10.3942 12.4309L16.712 6.96347L15.6213 5.7032L10.3838 10.2358Z"
+                        fill="#EC7C15"
+                      />
                     </svg>
                     ru.support@kgk-global.com
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__phone">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#tel"></use>
+                  <a href="tel:+74956680998" class="flex items-center gap-2">
+                    <svg
+                      class="shrink-0"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18 14.1833V17.1301C18 17.5676 17.6617 17.9306 17.2254 17.9614C16.8609 17.9872 16.5636 18 16.3333 18C8.9695 18 3 12.0305 3 4.66667C3 4.43642 3.01288 4.13906 3.03863 3.77458C3.06948 3.33823 3.43245 3 3.86988 3H6.81675C7.03065 3 7.2098 3.16202 7.23127 3.37483C7.25056 3.56589 7.26848 3.71928 7.28506 3.83502C7.45362 5.01227 7.79794 6.1328 8.29058 7.16919C8.36966 7.33554 8.31809 7.53466 8.16821 7.64172L6.36962 8.9265C7.4646 11.4843 9.51575 13.5354 12.0735 14.6304L13.3559 12.8349C13.4643 12.6832 13.6658 12.6311 13.8342 12.711C14.8705 13.2032 15.9909 13.5472 17.168 13.7153C17.283 13.7318 17.4354 13.7496 17.6252 13.7687C17.838 13.7902 18 13.9694 18 14.1833Z"
+                        fill="#EC7C15"
+                      />
                     </svg>
-                    <span>+</span>7 (495) 668-09-98
+                    +7 (495) 668-09-98
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="">
-                      <use xlink:href="img/sprite.svg#mail"></use>
+                  <a
+                    href="mailto:ru.sales@kgk-global.com"
+                    class="flex items-center gap-2"
+                  >
+                    <svg
+                      class="shrink-0"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.83333 3H17.8333C18.2936 3 18.6667 3.3731 18.6667 3.83333V17.1667C18.6667 17.6269 18.2936 18 17.8333 18H2.83333C2.3731 18 2 17.6269 2 17.1667V3.83333C2 3.3731 2.3731 3 2.83333 3ZM10.3838 10.2358L5.03935 5.69808L3.96065 6.96858L10.3942 12.4309L16.712 6.96347L15.6213 5.7032L10.3838 10.2358Z"
+                        fill="#EC7C15"
+                      />
                     </svg>
                     ru.sales@kgk-global.com
                   </a>
                 </li>
-                <li>
-                  <img width="18" height="22" src="./img/pin.svg" alt="">
-                  <p>
-                    Highgate Hill, London, UK
-                  </p>
+                <li class="flex gap-2">
+                  <svg
+                    class="shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"
+                      fill="#EC7C15"
+                    />
+                  </svg>
+                  Russia, Moscow, Leninsky Prospect, d. 137, building 1
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="footer__bottom-inner">
-            <p>© FleetL 2023</p>
-            <div class="footer__bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Website rules</a>
+            <!-- col -->
+            <div class="max-w-[324px]">
+              <h3 class="text-lg font-semibold uppercase leading-tight">
+                navigation:
+              </h3>
+              <ul
+                class="mt-5 flex flex-col gap-[15px] text-base leading-[24px]"
+              >
+                <li>
+                  <a href="/" class="flex items-center gap-2"> Home </a>
+                </li>
+                <li>
+                  <a href="./about.html" class="flex items-center gap-2">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="./service.html" class="flex items-center gap-2">
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="flex items-center gap-2">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- col -->
+            <div class="max-w-[324px]">
+              <h3 class="text-lg font-semibold uppercase leading-tight">
+                our services
+              </h3>
+              <ul
+                class="mt-5 flex flex-col gap-[15px] text-base leading-[24px]"
+              >
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >For Agricultural Machinery</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >For Specialized Equipment</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >For Freight Transport</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >For Light Commercial Vehicles</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >Video Monitoring</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2">Logistics</a>
+                </li>
+              </ul>
+            </div>
+            <!-- col -->
+            <div class="max-w-[324px]">
+              <h3 class="text-lg font-semibold uppercase leading-tight">
+                Useful Links:
+              </h3>
+              <ul
+                class="mt-5 flex flex-col gap-[15px] text-base leading-[24px]"
+              >
+                <li>
+                  <a href="#" class="flex items-center gap-2">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2">Site Rules</a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2"
+                    >Download Company Details</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- back to top -->
+            <div
+              class="right-0 top-0 xl:absolute small:bottom-0 small:top-auto"
+            >
+              <button
+                aria-label="Scroll to top"
+                class="scroll-top group flex h-[64px] w-[64px] items-center justify-center rounded-full border border-mainblue bg-mainblue transition-all hover:bg-white"
+              >
+                <svg
+                  class="fill-white transition-all group-hover:fill-mainblue"
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.86843 3.82843V16H7.81138V3.82843L2.29439 9.1924L0.839844 7.7782L8.8399 0L16.8398 7.7782L15.3853 9.1924L9.86843 3.82843Z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
